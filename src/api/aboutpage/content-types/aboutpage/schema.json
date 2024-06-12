@@ -217,6 +217,9 @@
         "videos",
         "audios"
       ]
+    },
+    "aboutuscontent": {
+      "type": "richtext"
     }
   }
 }

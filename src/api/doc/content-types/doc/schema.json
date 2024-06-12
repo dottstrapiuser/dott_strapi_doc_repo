@@ -13,155 +13,82 @@
   "pluginOptions": {},
   "attributes": {
     "intro": {
-      "type": "component",
-      "repeatable": false,
-      "component": "components.intro"
+      "type": "richtext"
     },
-    "introimage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "IntroductiontoLaunchpad": {
+      "type": "richtext"
     },
-    "dottlogo": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "TypesofLaunchpad": {
+      "type": "richtext"
     },
-    "storyimg1": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "BenefitsofLaunchpads": {
+      "type": "richtext"
     },
-    "storyimg2": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "SuccessfulStories": {
+      "type": "richtext"
     },
-    "quoteimg": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "SuccessfulStoriesfirstblock": {
+      "type": "richtext"
     },
-    "star": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "SuccessfulStoriessecondblock": {
+      "type": "richtext"
     },
-    "starnull": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "KeyComponents": {
+      "type": "richtext"
     },
-    "stake": {
-      "type": "component",
-      "repeatable": false,
-      "component": "components.staking"
+    "TipsforParticipants": {
+      "type": "richtext"
     },
-    "stakeimg": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "Conclusion": {
+      "type": "richtext"
     },
-    "unstakeimg": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "StakingPlatformTokens": {
+      "type": "richtext"
     },
-    "withdrawimg": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "UnstakingPlatformTokens": {
+      "type": "richtext"
     },
-    "rewardimg": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "WithdrawPlatformTokens": {
+      "type": "richtext"
     },
-    "tiers": {
-      "type": "component",
-      "repeatable": false,
-      "component": "components.tier"
+    "RewardsPlatformTokens": {
+      "type": "richtext"
     },
-    "projects": {
-      "type": "component",
-      "repeatable": false,
-      "component": "components.projects"
+    "BronzeTier": {
+      "type": "richtext"
     },
-    "daos": {
-      "type": "component",
-      "repeatable": false,
-      "component": "components.daos"
+    "SilverTier": {
+      "type": "richtext"
     },
-    "ApplyIVO": {
-      "type": "component",
-      "repeatable": false,
-      "component": "components.applyivos"
+    "GoldTier": {
+      "type": "richtext"
+    },
+    "PlatinumTier": {
+      "type": "richtext"
+    },
+    "DiamondTier": {
+      "type": "richtext"
+    },
+    "BlueDiamond": {
+      "type": "richtext"
+    },
+    "Tokenization": {
+      "type": "richtext"
+    },
+    "Membership": {
+      "type": "richtext"
+    },
+    "DAOs": {
+      "type": "richtext"
+    },
+    "Proposals": {
+      "type": "richtext"
+    },
+    "StepsToApplyIVOs": {
+      "type": "richtext"
+    },
+    "WhyIselectERCtoken": {
+      "type": "richtext"
     }
   }
 }
