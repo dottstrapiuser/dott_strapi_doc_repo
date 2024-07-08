@@ -910,7 +910,8 @@ export interface ApiHeaderHeader extends Schema.SingleType {
   info: {
     singularName: 'header';
     pluralName: 'headers';
-    displayName: 'Header';
+    displayName: 'Header page';
+    description: '';
   };
   options: {
     draftAndPublish: true;
