@@ -362,123 +362,6 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiAboutpageAboutpage extends Schema.CollectionType {
-  collectionName: 'aboutpages';
-  info: {
-    singularName: 'aboutpage';
-    pluralName: 'aboutpages';
-    displayName: 'aboutpage';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    abouttitle: Attribute.String;
-    primarytitle: Attribute.String;
-    suffixtitle: Attribute.String;
-    ybDescription: Attribute.Text;
-    expvalue: Attribute.String;
-    explabel: Attribute.String;
-    devvalue: Attribute.String;
-    devlabel: Attribute.String;
-    contact: Attribute.Component<'components.button'>;
-    knowmore: Attribute.Component<'components.button'>;
-    bannerimg: Attribute.Media;
-    ybs: Attribute.String;
-    custom: Attribute.String;
-    sstitle: Attribute.String;
-    Description: Attribute.Text;
-    bcimg: Attribute.Media;
-    fsimg: Attribute.Media;
-    ssimg: Attribute.Media;
-    bctitle: Attribute.String;
-    bcdesc: Attribute.Text;
-    fstitle: Attribute.String;
-    fsdesc: Attribute.Text;
-    softtitle: Attribute.String;
-    ssdesc: Attribute.Text;
-    chooseyb: Attribute.String;
-    visionimg: Attribute.Media;
-    visiontitle: Attribute.String;
-    visiondesc: Attribute.Text;
-    expertimg: Attribute.Media;
-    exptitle: Attribute.String;
-    expdesc: Attribute.Text;
-    commitimg: Attribute.Media;
-    committitle: Attribute.String;
-    commitdesc: Attribute.Text;
-    fireblock: Attribute.Media;
-    metamask: Attribute.Media;
-    web3: Attribute.Media;
-    blockfill: Attribute.Media;
-    aboutuscontent: Attribute.RichText;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::aboutpage.aboutpage',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::aboutpage.aboutpage',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiDocDoc extends Schema.CollectionType {
-  collectionName: 'docs';
-  info: {
-    singularName: 'doc';
-    pluralName: 'docs';
-    displayName: 'doc';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    intro: Attribute.RichText;
-    IntroductiontoLaunchpad: Attribute.RichText;
-    TypesofLaunchpad: Attribute.RichText;
-    BenefitsofLaunchpads: Attribute.RichText;
-    SuccessfulStories: Attribute.RichText;
-    SuccessfulStoriesfirstblock: Attribute.RichText;
-    SuccessfulStoriessecondblock: Attribute.RichText;
-    KeyComponents: Attribute.RichText;
-    TipsforParticipants: Attribute.RichText;
-    Conclusion: Attribute.RichText;
-    StakingPlatformTokens: Attribute.RichText;
-    UnstakingPlatformTokens: Attribute.RichText;
-    WithdrawPlatformTokens: Attribute.RichText;
-    RewardsPlatformTokens: Attribute.RichText;
-    BronzeTier: Attribute.RichText;
-    SilverTier: Attribute.RichText;
-    GoldTier: Attribute.RichText;
-    PlatinumTier: Attribute.RichText;
-    DiamondTier: Attribute.RichText;
-    BlueDiamond: Attribute.RichText;
-    Tokenization: Attribute.RichText;
-    Membership: Attribute.RichText;
-    DAOs: Attribute.RichText;
-    Proposals: Attribute.RichText;
-    StepsToApplyIVOs: Attribute.RichText;
-    WhyIselectERCtoken: Attribute.RichText;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<'api::doc.doc', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<'api::doc.doc', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-  };
-}
-
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -905,6 +788,153 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiAboutpageAboutpage extends Schema.CollectionType {
+  collectionName: 'aboutpages';
+  info: {
+    singularName: 'aboutpage';
+    pluralName: 'aboutpages';
+    displayName: 'aboutpage';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    abouttitle: Attribute.String;
+    primarytitle: Attribute.String;
+    suffixtitle: Attribute.String;
+    ybDescription: Attribute.Text;
+    expvalue: Attribute.String;
+    explabel: Attribute.String;
+    devvalue: Attribute.String;
+    devlabel: Attribute.String;
+    contact: Attribute.Component<'components.button'>;
+    knowmore: Attribute.Component<'components.button'>;
+    bannerimg: Attribute.Media;
+    ybs: Attribute.String;
+    custom: Attribute.String;
+    sstitle: Attribute.String;
+    Description: Attribute.Text;
+    bcimg: Attribute.Media;
+    fsimg: Attribute.Media;
+    ssimg: Attribute.Media;
+    bctitle: Attribute.String;
+    bcdesc: Attribute.Text;
+    fstitle: Attribute.String;
+    fsdesc: Attribute.Text;
+    softtitle: Attribute.String;
+    ssdesc: Attribute.Text;
+    chooseyb: Attribute.String;
+    visionimg: Attribute.Media;
+    visiontitle: Attribute.String;
+    visiondesc: Attribute.Text;
+    expertimg: Attribute.Media;
+    exptitle: Attribute.String;
+    expdesc: Attribute.Text;
+    commitimg: Attribute.Media;
+    committitle: Attribute.String;
+    commitdesc: Attribute.Text;
+    fireblock: Attribute.Media;
+    metamask: Attribute.Media;
+    web3: Attribute.Media;
+    blockfill: Attribute.Media;
+    aboutuscontent: Attribute.RichText;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::aboutpage.aboutpage',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::aboutpage.aboutpage',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiDocDoc extends Schema.CollectionType {
+  collectionName: 'docs';
+  info: {
+    singularName: 'doc';
+    pluralName: 'docs';
+    displayName: 'doc';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    intro: Attribute.RichText;
+    IntroductiontoLaunchpad: Attribute.RichText;
+    TypesofLaunchpad: Attribute.RichText;
+    BenefitsofLaunchpads: Attribute.RichText;
+    SuccessfulStories: Attribute.RichText;
+    SuccessfulStoriesfirstblock: Attribute.RichText;
+    SuccessfulStoriessecondblock: Attribute.RichText;
+    KeyComponents: Attribute.RichText;
+    TipsforParticipants: Attribute.RichText;
+    Conclusion: Attribute.RichText;
+    StakingPlatformTokens: Attribute.RichText;
+    UnstakingPlatformTokens: Attribute.RichText;
+    WithdrawPlatformTokens: Attribute.RichText;
+    RewardsPlatformTokens: Attribute.RichText;
+    BronzeTier: Attribute.RichText;
+    SilverTier: Attribute.RichText;
+    GoldTier: Attribute.RichText;
+    PlatinumTier: Attribute.RichText;
+    DiamondTier: Attribute.RichText;
+    BlueDiamond: Attribute.RichText;
+    Tokenization: Attribute.RichText;
+    Membership: Attribute.RichText;
+    DAOs: Attribute.RichText;
+    Proposals: Attribute.RichText;
+    StepsToApplyIVOs: Attribute.RichText;
+    WhyIselectERCtoken: Attribute.RichText;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::doc.doc', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::doc.doc', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
+export interface ApiHeaderHeader extends Schema.SingleType {
+  collectionName: 'headers';
+  info: {
+    singularName: 'header';
+    pluralName: 'headers';
+    displayName: 'Header';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    header: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::header.header',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::header.header',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -915,8 +945,6 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::aboutpage.aboutpage': ApiAboutpageAboutpage;
-      'api::doc.doc': ApiDocDoc;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
@@ -925,6 +953,9 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::aboutpage.aboutpage': ApiAboutpageAboutpage;
+      'api::doc.doc': ApiDocDoc;
+      'api::header.header': ApiHeaderHeader;
     }
   }
 }
